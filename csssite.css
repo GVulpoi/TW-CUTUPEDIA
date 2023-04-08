@@ -1,0 +1,268 @@
+html
+{
+    background-color: #FFDD8D;
+}
+
+.fixedbar {
+    display: flex;
+    position: fixed;
+    z-index: 0;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: #E9BA4D;
+    align-items: center;
+    color: white;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .fixedbar a {
+    float: left;
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .fixedbar a:hover {
+    background: #E9BA4D ;
+    color: white;
+  }
+
+  .title_al
+  {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    align-items: center;
+    display: flex;
+    align-items:flex-end;
+    padding: 1% 5%;
+  }
+
+  .menu_text
+  {
+    display: block;
+    justify-content: right;
+    margin-right: 20%;
+  }
+
+  .text
+  {
+    background-color: #DDC48B;
+    margin-top: 10%;
+    text-align: center;
+    font-size: 130%;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    border-radius: 20px;
+  }
+
+  .dropdown 
+  {
+    z-index: 1;
+    position: fixed;
+    display: flex;
+  }
+
+  .dropdown-content 
+  {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #E9BA4D;
+    border-style: solid;
+    border-color: black;
+  }
+
+  .dropdown:hover .dropdown-content 
+  {
+    display: block;
+  }
+
+  .button 
+  {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #FFDD8D;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+  }
+  .button:hover 
+  {
+    background-color: #ab9a73;
+  }
+
+  .bar 
+  {
+    display: block;
+    width: 30px;
+    height: 5px;
+    color: #FFDD8D;
+    background-color: black;
+    margin: 3px 0;
+    border-radius: 40%;
+  }
+  
+  .text_final
+  {
+    background-color: #DDC48B;
+    margin-top: 10%;
+    text-align: left;
+    font-size: 130%;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    border-radius: 20px;
+  }
+
+  .poza
+  {
+    justify-content: space-between;
+    display: flex;
+    justify-content: center;
+    max-inline-size: 100%;
+    block-size: auto;
+    padding-left: 2%;
+    padding-right: 5%;
+    padding-top: 3%;
+  }
+
+  .link
+  {
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+  }
+
+  .link:hover
+  {
+    background-color: #FFDD8D;
+    color: gray;
+    border-radius: 30px;
+  }
+
+  table {
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+  }
+  
+  td, th {
+    border: 2px solid black;
+    text-align: left;
+    padding: 8px;
+  }
+
+  .float-right
+    {
+    float: right;
+    width: 65%;
+    }
+
+    img 
+    {
+      transition: transform 0.3s ease;
+    }
+    
+    img:hover 
+    {
+      transform: scale(1.1);
+    }
+
+    .animatie
+    {
+      position: relative;
+      left: 0;
+      animation: move 12s linear infinite;
+    }
+    
+    @keyframes move 
+    {
+      0% {
+        left:0;
+      }
+      50% {
+        left: 80%;
+      }
+      100% {
+        left: 0;
+      }
+    }
+
+    p::after
+    {
+      content: " :)";
+    }
+
+    P::before
+    {
+      content: " :( ";
+    }
+
+    #talii
+    {
+      margin-top: 10%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: fr;
+      margin-bottom: 5% 
+    }
+
+    .footer
+    {
+      display: flex;
+      background-color: black;
+      color: #6e6e6e;
+      width: 100%;
+      justify-content: right;
+      padding: 0;
+      margin: 0;
+    }
+
+    h5
+    {
+      margin-right: 10%;
+    }
+
+    #poze
+    {
+      margin-left: 2%;
+      margin-top: 10%;
+      display: grid;
+      grid-template-columns: fr fr;
+      grid-template-rows: fr fr;
+    }
+
+    .grid-item
+    {
+      grid-row: 1 / span 1;
+      grid-column: 1 / span 1;
+    }
+    
+    .grid-item:nth-child(2)
+    {
+      grid-row: 2 / span 1;
+      grid-column: 2 / span 1;
+    }
+    
+    .grid-item:nth-child(3)
+    {
+      grid-row: 3 / span 1;
+      grid-column: 3 / span 1;
+    }
+
+    @keyframes title_al {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
