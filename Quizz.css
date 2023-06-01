@@ -1,0 +1,40 @@
+html{
+	background-color: #B6AFA0;
+}
+
+.titlu{
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+
+.intrebari{
+	padding-top: 40px;
+	padding-left: 40px;
+	font-size: 20px;
+}
+
+.stylebut{
+	display: grid;
+	grid-template-columns: 40px 150px;
+	grid-template-rows: 40px;
+	background-color: gray;
+	margin-top: 5px;
+	align-items: center;
+	margin-left: 10px;
+	border-radius: 10px;
+}
+
+.nr{
+	grid-column: 1;
+	background-color: black;
+	color: white;
+	justify-content: center;
+	border-radius: 10px;
+}
+
+.rasp{
+	grid-column: 2;
+	justify-content: center;
+	color: white;
+}
