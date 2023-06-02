@@ -3,10 +3,33 @@ html{
 }
 
 .titlu{
+	display: grid;
+	grid-template-columns: 40px auto;
 	color: white;
-	display: flex;
-	justify-content: center;
 	padding-bottom: 20px;
+	font-size: 40px;
+}
+
+.titl1{
+	grid-column: 2;
+	justify-content: center;
+	display: flex;
+}
+
+.return{
+	display: inline-block;
+	text-decoration: none;
+	grid-column: 1;
+	height: 20px;
+	width: 50px;
+	font-size: 20px;
+	justify-content: center;
+	align-items: center;
+	background-color: #B6AFA0;
+	border-width: 2px;
+	border-color: rgb(131, 131, 131);
+	border-radius: 30px;
+	color: black;
 }
 
 .reguli{
@@ -43,3 +66,10 @@ html{
 	justify-content: center;
 	color: white;
 }
+
+.textbox {
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+  }

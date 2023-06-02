@@ -195,6 +195,14 @@ window.onload = function() {
 	sub.style.borderRadius = 20 + "px";
 	document.body.appendChild(sub);
 
+	var input = document.createElement('input');
+    input.type = 'text';
+    input.classList.add('textbox');
+	input.style.padding = 15 + "px";
+	input.style.marginTop = 15 + "px";
+
+    var container = document.getElementById('container');
+    container.appendChild(input);
 
 	function afis_scor(){
 		document.body.removeChild(sub);
@@ -212,8 +220,7 @@ window.onload = function() {
 			location.reload();
 		}
 		
-		var interval = setInterval(refreshPage, 10000);
-
+		var interval = setInterval(refreshPage, 20000);
 
 		function gen_rand(){
 	randColor = Math.floor(Math.random()*16777215).toString(16).padStart(6, '0').toUpperCase();
@@ -224,10 +231,35 @@ window.onload = function() {
 		if (event.key === "c"){
 		score.style.color = "#" + gen_rand();
 		}
-	})
+	});
+
+	var ababa = input.value;
+
+	console.log('Input value:', ababa);
+
 	}
 
 	document.getElementById('sub').addEventListener("click" , afis_scor);
+
+	document.addEventListener('keydown' , function(event){
+		if(event.key === "f"){
+	var intrebari = document.getElementById('q1');
+	intrebari.classList.remove('intrebari');
+	var intrebari = document.getElementById('q2');
+	intrebari.classList.remove('intrebari');
+	var intrebari = document.getElementById('q3');
+	intrebari.classList.remove('intrebari');
+	var intrebari = document.getElementById('q4');
+	intrebari.classList.remove('intrebari');
+	var intrebari = document.getElementById('q5');
+	intrebari.classList.remove('intrebari');
+		}
+	});
+
+	const ti = document.querySelector("p");
+	const compStyle = window.getComputedStyle(ti);
+	console.log(compStyle.width);
+
 }
 
 
